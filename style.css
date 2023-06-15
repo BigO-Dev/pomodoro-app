@@ -47,6 +47,10 @@ h1 {
   font-weight: var(--fw-bold);
 }
 
+button {
+  cursor: pointer;
+}
+
 .btn-row {
   background-color: var(--clr-dark-2);
   display: flex;
@@ -105,10 +109,11 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   height: 339px;
   width: 339px;
   text-align: center;
+  border: 10px solid var(--color-primary);
+  border-radius: 50%;
 }
 
 .timer {
