@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Roboto+Slab:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Roboto+Slab:wght@400;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="style.css">
-  <script src="script" defer></script>
-  <title> Pomodoro app</title>
-</head>
-<body>
-  <!-- pomodoro
+    <link rel="stylesheet" href="style.css" />
+    <script src="script" defer></script>
+    <title>Pomodoro app</title>
+  </head>
+  <body>
+    <!-- pomodoro
   short break
   long break
 
@@ -34,5 +42,23 @@
   Color
 
   Apply -->
-</body>
+
+    <h1>pomodoro</h1>
+    <div class="btn-row">
+      <button class="btn btn-active">pomodoro</button>
+      <button class="btn btn-inactive">short break</button>
+      <button class="btn btn-inactive">long break</button>
+    </div>
+    <div class="clock-outer">
+      <div class="clock-inner">
+        <div class="clock">
+          <div class="timer">17:59</div>
+          <div class="mode">pause</div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-icon">
+      <img src="./assets/icon-settings.svg" alt="" />
+    </div>
+  </body>
 </html>

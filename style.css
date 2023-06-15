@@ -1,0 +1,127 @@
+:root {
+  /* Primary Colors */
+  --color-primary: #f87272;
+  --color-secondary: #70f3f8;
+  --color-tertiary: #d881f8;
+  --color-accent: #d7e0ff;
+
+  --clr-dark-1: #1e213f;
+  --clr-dark-2: #161932;
+  --clr-light-1: #eff1fa;
+  --clr-light-2: #ffffff;
+
+  --ff-primary: "Kumbh Sans", sans-serif;
+  --ff-secondary: "Roboto Slab", serif;
+  --ff-tertiary: "Space Mono", monospace;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  font-weight: var(--fw-regular);
+  line-height: 1.5;
+  background: var(--clr-dark-1);
+  color: var(--color-accent);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: var(--fw-bold);
+}
+
+.btn-row {
+  background-color: var(--clr-dark-2);
+  display: flex;
+  gap: 0;
+  padding: 0.5rem;
+  width: 23.3rem;
+  border-radius: 31.5rem;
+}
+
+.btn {
+  background-color: var(--clr-dark-2);
+  border: none;
+  color: var(--color-accent);
+  opacity: 0.4;
+  font-size: 0.875rem;
+  font-weight: var(--fw-bold);
+  display: grid;
+  place-content: center;
+  width: 120px;
+  height: 48px;
+  border-radius: 26.5px;
+}
+
+.btn-active {
+  background-color: var(--color-primary);
+  color: var(--clr-dark-1);
+  opacity: 1;
+}
+
+.clock-outer {
+  width: 410px;
+  height: 410px;
+  border: 2rem solid var(--clr-dark-1);
+  border-radius: 50%;
+  background: linear-gradient(315deg, #2e325a 0%, #0e112a 100%);
+  box-shadow: -50px -50px 100px #272c5a, 50px 50px 100px #121530;
+  position: relative;
+}
+
+.clock-inner {
+  width: 366px;
+  height: 366px;
+  border-radius: 50%;
+  background-color: var(--clr-dark-2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 339px;
+  width: 339px;
+  text-align: center;
+}
+
+.timer {
+  font-size: 100px;
+  font-weight: var(--fw-bold);
+  text-align: center;
+  letter-spacing: -5px;
+}
+
+.mode {
+  font-size: 1rem;
+  font-weight: var(--fw-bold);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
