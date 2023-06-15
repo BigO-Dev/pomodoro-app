@@ -1,0 +1,21 @@
+:root {
+  /* Colors */
+  --color-primary: #f87272;
+  --color-secondary: #70f3f8;
+  --color-tertiary: #d881f8;
+  --color-quaternary: #d7e0ff;
+
+  --clr-dark-1: #1e213f;
+  --clr-dark-2: #161932;
+  --clr-light-1: #eff1fa;
+  --clr-light-2: #ffffff;
+
+  --ff-primary: "Kumbh Sans", sans-serif;
+  --ff-secondary: "Roboto Slab", serif;
+  --ff-tertiary: "Space Mono", monospace;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs
+}
