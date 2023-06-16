@@ -42,24 +42,26 @@
   Color
 
   Apply -->
+    <main class="content">
+      <h1>pomodoro</h1>
 
-    <h1>pomodoro</h1>
-    <div class="btn-row">
-      <button class="btn btn-active" id="start">pomodoro</button>
-      <button class="btn btn-inactive">short break</button>
-      <button class="btn btn-inactive">long break</button>
-    </div>
-    <div class="clock-outer">
-      <div class="clock-inner">
-        <div class="clock">
-          <div class="timer" id="timer">00:00</div>
-          <div class="mode">pause</div>
+      <div class="btn-row">
+        <button class="btn btn-active" id="start">pomodoro</button>
+        <button class="btn btn-inactive" id="short-break">short break</button>
+        <button class="btn btn-inactive" id="long-break">long break</button>
+      </div>
+      <div class="clock-outer">
+        <div class="clock-inner">
+          <div class="clock">
+            <div class="timer" id="timer">00:00</div>
+            <div class="mode">pause</div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="btn-icon">
-      <img src="./assets/icon-settings.svg" alt="" />
-    </div>
+      <div class="btn-icon">
+        <img src="./assets/icon-settings.svg" alt="" />
+      </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>

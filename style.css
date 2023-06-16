@@ -35,16 +35,13 @@ body {
   line-height: 1.5;
   background: var(--clr-dark-1);
   color: var(--color-accent);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: var(--fw-bold);
+.content {
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+  min-height: 100vh;
 }
 
 button {
