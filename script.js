@@ -3,6 +3,9 @@ const modeElement = document.querySelector(".mode");
 const startButton = document.getElementById("start");
 const shortBreakButton = document.getElementById("short-break");
 const longBreakButton = document.getElementById("long-break");
+const modal = document.querySelector(".modal");
+const openModalButton = document.getElementById("open-modal-button");
+const closeModalButton = document.querySelector(".close-modal-button");
 
 let timer;
 let isBreak = false;
@@ -79,4 +82,18 @@ longBreakButton.addEventListener("click", () => {
   longBreakButton.classList.remove("btn-inactive");
   shortBreakButton.classList.add("btn-inactive");
   longBreakButton.classList.add("btn-active");
+});
+
+openModalButton.addEventListener("click", function () {
+  modal.style.display = "block";
+});
+
+closeModalButton.addEventListener("click", function () {
+  modal.style.display = "none";
+});
+
+window.addEventListener("click", function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 });
